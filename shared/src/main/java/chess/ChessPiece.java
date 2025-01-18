@@ -53,6 +53,7 @@ public class ChessPiece {
      */
     public Collection<ChessMove> pieceMoves(ChessBoard board, ChessPosition myPosition) {
         Collection<ChessMove> legalMoves = new ArrayList<>();
+        //Need to delete all these variables. Just make new position objects as needed as I loop through
         ChessPosition tempPosition = new ChessPosition(myPosition.getRow(), myPosition.getColumn());
         ChessPosition tempPosition1 = new ChessPosition(myPosition.getRow(), myPosition.getColumn());
         ChessPosition tempPosition2 = new ChessPosition(myPosition.getRow(), myPosition.getColumn());

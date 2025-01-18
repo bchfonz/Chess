@@ -46,31 +46,31 @@ public class ChessBoard {
                     //White Rooks
                     if(j == 0 || j == 7){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.WHITE, ChessPiece.PieceType.ROOK);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
                     //White Knights
                     if(j == 1 || j == 6){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.WHITE, ChessPiece.PieceType.KNIGHT);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
                     //White Bishops
                     if(j == 2 || j== 5){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.WHITE, ChessPiece.PieceType.BISHOP);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
                     //White Queen
                     if(j == 3){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.WHITE, ChessPiece.PieceType.QUEEN);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
                     //White King
                     if(j == 4){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.WHITE, ChessPiece.PieceType.KING);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
 
@@ -80,31 +80,31 @@ public class ChessBoard {
                     //Black Rooks
                     if(j == 0 || j == 7){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.BLACK, ChessPiece.PieceType.ROOK);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
                     //Black Knights
                     if(j == 1 || j == 6){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.BLACK, ChessPiece.PieceType.KNIGHT);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
                     //Black Bishops
                     if(j == 2 || j== 5){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.BLACK, ChessPiece.PieceType.BISHOP);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
                     //Black Queen
                     if(j == 3){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.BLACK, ChessPiece.PieceType.QUEEN);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
                     //Black King
                     if(j == 4){
                         ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.BLACK, ChessPiece.PieceType.KING);
-                        ChessPosition tempPosition = new ChessPosition(i, j);
+                        ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                         addPiece(tempPosition, tempPiece);
                     }
 
@@ -112,13 +112,13 @@ public class ChessBoard {
                 //Sets white pawns
                 if(i == 1){
                     ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.WHITE, ChessPiece.PieceType.PAWN);
-                    ChessPosition tempPosition = new ChessPosition(i, j);
+                    ChessPosition tempPosition = new ChessPosition( i+ 1, j + 1);
                     addPiece(tempPosition, tempPiece);
                 }
                 //Sets black pawns
                 if(i == 6){
                     ChessPiece tempPiece = new ChessPiece(ChessGame.TeamColor.BLACK, ChessPiece.PieceType.PAWN);
-                    ChessPosition tempPosition = new ChessPosition(i, j);
+                    ChessPosition tempPosition = new ChessPosition(i + 1, j + 1);
                     addPiece(tempPosition, tempPiece);
                 }
             }
