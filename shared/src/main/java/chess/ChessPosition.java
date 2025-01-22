@@ -31,10 +31,10 @@ public class ChessPosition {
         return col;
     }
 
-    public void setColumn(int newCol){
+    public void setColumn(int newCol) {
         col = newCol;
     }
-    public void setRow(int newRow){
+    public void setRow(int newRow) {
         row = newRow;
     }
 
