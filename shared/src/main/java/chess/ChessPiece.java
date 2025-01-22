@@ -11,30 +11,7 @@ import java.util.Collection;
  */
 public class ChessPiece {
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((pieceColor == null) ? 0 : pieceColor.hashCode());
-        result = prime * result + ((type == null) ? 0 : type.hashCode());
-        return result;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        ChessPiece other = (ChessPiece) obj;
-        if (pieceColor != other.pieceColor)
-            return false;
-        if (type != other.type)
-            return false;
-        return true;
-    }
+    
 
     private final ChessGame.TeamColor pieceColor;
     private final ChessPiece.PieceType type;
@@ -81,6 +58,7 @@ public class ChessPiece {
         Collection<ChessMove> legalMoves = new ArrayList<>();
         int startRow = myPosition.getRow();
         int startCol = myPosition.getColumn();
+        //Stores the possible directions a piece can move
         int[][] directions;
         // Need to delete all these variables. Just make new position objects as needed
         // as I loop through
@@ -265,5 +243,30 @@ public class ChessPiece {
         
 
         return legalMoves;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((pieceColor == null) ? 0 : pieceColor.hashCode());
+        result = prime * result + ((type == null) ? 0 : type.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        ChessPiece other = (ChessPiece) obj;
+        if (pieceColor != other.pieceColor)
+            return false;
+        if (type != other.type)
+            return false;
+        return true;
     }
 }

@@ -51,14 +51,6 @@ public class ChessMove {
                 ", promotionPiece=" + promotionPiece +
                 '}';
     }
-    //Readable toString()
-    // public String toString() {
-    //     return "ChessMove{" +
-    //             "startPosition (" + startPosition.getRow() + ", " + startPosition.getColumn() + ") " +
-    //             ", endPosition (" + endPosition.getRow() + ", " + endPosition.getColumn() + ") " +
-    //             ", promotionPiece=" + promotionPiece +
-    //             '}';
-    // }
 
     @Override
     public int hashCode() {
